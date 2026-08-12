@@ -1,235 +1,558 @@
 <!-- Generated with Claude -->
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Business Analytics Portfolio</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Zhang | Analytics Portfolio</title>
 
     <style>
-      /* ============================================================
-       BASIC STYLES — students can tweak colors/fonts here
-       ============================================================ */
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-        color: #222;
-        background: #f7f7f7;
-        line-height: 1.5;
-      }
-
-      .container {
-        max-width: 900px;
-        margin: 0 auto;
-        padding: 40px 20px;
-      }
-
-      /* ---------- HEADER (photo + name + subheading) ---------- */
-      header {
-        text-align: center;
-        margin-bottom: 30px;
-      }
-
-      /* Empty space for photo — replace with your own <img> if you like */
-      .photo {
-        width: 140px;
-        height: 140px;
-        border-radius: 50%;
-        background: #ddd;
-        border: 2px dashed #aaa;
-        margin: 0 auto 16px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #888;
-        font-size: 13px;
-      }
-
-      header h1 {
-        font-size: 28px;
-        margin-bottom: 6px;
-      } /* NAME */
-      header p {
-        font-size: 16px;
-        color: #555;
-      } /* EXPERIENCES */
-
-      /* ---------- TABS ---------- */
-      .tabs {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        margin-bottom: 24px;
-      }
-
-      .tab-button {
-        padding: 10px 22px;
-        border: 1px solid #ccc;
-        background: #fff;
-        cursor: pointer;
-        font-size: 15px;
-        border-radius: 4px;
-      }
-
-      .tab-button.active {
-        background: #2c3e50;
-        color: #fff;
-        border-color: #2c3e50;
-      }
-
-      /* ---------- TAB CONTENT ---------- */
-      .tab-content {
-        display: none;
-      }
-      .tab-content.active {
-        display: block;
-      }
-
-      .panel {
-        background: #fff;
-        border: 1px solid #eee;
-        border-radius: 6px;
-        padding: 24px;
-      }
-
-      /* ---------- PROJECT CARDS (1 x 3 grid) ---------- */
-      .cards {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 16px;
-      }
-
-      .card {
-        border: 1px solid #eee;
-        border-radius: 6px;
-        overflow: hidden;
-        background: #fff;
-      }
-
-      /* Empty space for project photo */
-      .card-photo {
-        height: 120px;
-        background: #ddd;
-        border-bottom: 1px dashed #aaa;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #888;
-        font-size: 12px;
-      }
-
-      .card-text {
-        padding: 14px;
-      }
-      .card-text h3 {
-        font-size: 16px;
-        margin-bottom: 6px;
-      }
-      .card-text p {
-        font-size: 14px;
-        color: #555;
-      }
-
-      /* ---------- MOBILE: stack cards vertically ---------- */
-      @media (max-width: 640px) {
-        .cards {
-          grid-template-columns: 1fr;
+        * {
+            box-sizing: border-box;
         }
-      }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f4f2;
+            color: #111;
+            line-height: 1.5;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+
+        /* NAV */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 28px 0;
+            border-bottom: 1px solid #222;
+        }
+
+        .logo {
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+            font-size: 14px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 70vh;
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            align-items: center;
+            gap: 70px;
+            padding: 80px 0;
+        }
+
+        .hero h1 {
+            font-size: clamp(46px, 7vw, 86px);
+            line-height: 0.95;
+            margin: 0 0 28px;
+            font-weight: 500;
+            letter-spacing: -3px;
+        }
+
+        .hero-description {
+            max-width: 520px;
+            font-size: 24px;
+            line-height: 1.25;
+        }
+
+        .hero-description a {
+            text-decoration: underline;
+        }
+
+        .hero-photo {
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero-photo img {
+            width: 100%;
+            max-width: 330px;
+            aspect-ratio: 4 / 5;
+            object-fit: cover;
+        }
+
+        /* GENERAL SECTIONS */
+
+        section {
+            padding: 70px 0;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: 400;
+            margin: 0 0 36px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #222;
+        }
+
+        /* PROJECTS */
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .project-number {
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+
+        .project-card img {
+            width: 100%;
+            aspect-ratio: 3 / 4;
+            object-fit: cover;
+            background: #ddd;
+        }
+
+        .project-card h3 {
+            margin: 14px 0 5px;
+            font-size: 17px;
+            font-weight: 500;
+        }
+
+        .project-card p {
+            margin: 0;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .project-card a:hover h3 {
+            text-decoration: underline;
+        }
+
+        /* EXPERIENCE */
+
+        .experience-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 60px;
+        }
+
+        .experience-intro {
+            font-size: 22px;
+            margin: 0;
+        }
+
+        .experience-list {
+            border-top: 1px solid #aaa;
+        }
+
+        .experience-item {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+            padding: 22px 0;
+            border-bottom: 1px solid #aaa;
+        }
+
+        .experience-item h3 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .experience-item p {
+            margin: 0;
+            font-size: 14px;
+            color: #444;
+        }
+
+        /* ABOUT */
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+        }
+
+        .about-grid p {
+            margin-top: 0;
+            font-size: 16px;
+        }
+
+        .skills-list {
+            border-top: 1px solid #aaa;
+        }
+
+        .skill {
+            display: flex;
+            justify-content: space-between;
+            padding: 16px 0;
+            border-bottom: 1px solid #aaa;
+            font-size: 15px;
+        }
+
+        /* CONTACT */
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+        }
+
+        .contact-intro {
+            font-size: 26px;
+            margin-top: 0;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .contact-links a {
+            border-bottom: 1px solid #222;
+            padding-bottom: 10px;
+        }
+
+        .contact-links a:hover {
+            opacity: 0.6;
+        }
+
+        /* FOOTER */
+
+        footer {
+            margin-top: 40px;
+            padding: 30px 0;
+            border-top: 1px solid #222;
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 800px) {
+
+            .hero,
+            .experience-grid,
+            .about-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                gap: 40px;
+                padding: 50px 0;
+            }
+
+            .hero-photo {
+                justify-content: flex-start;
+            }
+
+            .hero-photo img {
+                max-width: 270px;
+            }
+
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .experience-item {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            .nav-links {
+                gap: 12px;
+                font-size: 12px;
+            }
+        }
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
+
     <div class="container">
-      <!-- ============================================================
-         HEADER: photo, name, experiences
-         ============================================================ -->
-      <header>
-        <!-- Replace this div with <img src="your-photo.jpg" class="photo"> -->
-        <div class="photo">Photo</div>
 
-        <h1>Mini Zhang</h1>
-        <p>Business Analyst · SQL · Python · Visualization</p>
-      </header>
+        <!-- NAVIGATION -->
 
-      <!-- ============================================================
-         TABS
-         ============================================================ -->
-      <div class="tabs">
-        <button class="tab-button active" onclick="showTab('about')">
-          About Me
-        </button>
-        <button class="tab-button" onclick="showTab('projects')">
-          Projects
-        </button>
-      </div>
+        <nav>
+            <div class="logo">Mini Zhang</div>
 
-      <!-- ---------- TAB 1: ABOUT ME ---------- -->
-      <div id="about" class="tab-content active">
-        <div class="panel">
-          <p>
-            Write a short introduction about yourself here — your background,
-            skills, and what kind of business analytics role you're looking for.
-          </p>
-        </div>
-      </div>
-
-      <!-- ---------- TAB 2: PROJECTS ---------- -->
-      <div id="projects" class="tab-content">
-        <div class="cards">
-          <!-- CARD 1 -->
-          <div class="card">
-            <div class="card-photo">Project Image</div>
-            <div class="card-text">
-              <h3>Project Title</h3>
-              <p>Short description of what you did and the tools you used.</p>
+            <div class="nav-links">
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
             </div>
-          </div>
+        </nav>
 
-          <!-- CARD 2 -->
-          <div class="card">
-            <div class="card-photo">Project Image</div>
-            <div class="card-text">
-              <h3>Project Title</h3>
-              <p>Short description of what you did and the tools you used.</p>
-            </div>
-          </div>
 
-          <!-- CARD 3 -->
-          <div class="card">
-            <div class="card-photo">Project Image</div>
-            <div class="card-text">
-              <h3>Project Title</h3>
-              <p>Short description of what you did and the tools you used.</p>
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <div>
+                <h1>Mini Zhang</h1>
+
+                <div class="hero-description">
+                    I'm a Master of Management in Analytics student interested in
+                    data analytics, product strategy, and turning data into
+                    practical business decisions.
+                    <br><br>
+                    Currently based in Montréal.
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
+
+            <div class="hero-photo">
+                <img src="assets/profile.jpg" alt="Mini Zhang">
+            </div>
+
+        </section>
+
+
+        <!-- PROJECTS -->
+
+        <section id="projects">
+
+            <h2 class="section-title">Selected Projects</h2>
+
+            <div class="project-grid">
+
+                <article class="project-card">
+                    <div class="project-number">01</div>
+
+                    <a href="#">
+                        <img src="assets/project-subway.jpg" alt="NYC Subway analytics project">
+
+                        <h3>NYC Subway Advertising Analysis</h3>
+                    </a>
+
+                    <p>
+                        Using MTA ridership data to identify stations and time periods
+                        for more targeted advertising decisions.
+                    </p>
+                </article>
+
+
+                <article class="project-card">
+                    <div class="project-number">02</div>
+
+                    <a href="#">
+                        <img src="assets/project-sql.jpg" alt="SQL database project">
+
+                        <h3>SQL & Database Analysis</h3>
+                    </a>
+
+                    <p>
+                        Relational database design, joins, subqueries, aggregation,
+                        and analytical SQL queries.
+                    </p>
+                </article>
+
+
+                <article class="project-card">
+                    <div class="project-number">03</div>
+
+                    <a href="#">
+                        <img src="assets/project-python.jpg" alt="Python analytics project">
+
+                        <h3>Python Analytics</h3>
+                    </a>
+
+                    <p>
+                        Data analysis and visualization using Python to explore
+                        business and statistical problems.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- EXPERIENCE -->
+
+        <section id="experience">
+
+            <h2 class="section-title">Experience</h2>
+
+            <div class="experience-grid">
+
+                <p class="experience-intro">
+                    Experience across product, analytics, research, and
+                    data-driven decision making.
+                </p>
+
+                <div class="experience-list">
+
+                    <div class="experience-item">
+                        <h3>UniUni</h3>
+
+                        <p>
+                            Product Assistant Intern. Supported product development,
+                            user research, dashboard creation, and feature planning.
+                        </p>
+                    </div>
+
+                    <div class="experience-item">
+                        <h3>Enabled Talent</h3>
+
+                        <p>
+                            Data & Research Intern. Conducted labour-market research,
+                            analyzed data, and developed insights and recommendations.
+                        </p>
+                    </div>
+
+                    <div class="experience-item">
+                        <h3>UBC SEEDS</h3>
+
+                        <p>
+                            Undergraduate Researcher. Worked on a large-scale
+                            dining-hall feedback study using research design and
+                            quantitative analysis.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+
+        <section id="about">
+
+            <h2 class="section-title">About Me</h2>
+
+            <div class="about-grid">
+
+                <div>
+                    <p>
+                        I'm currently pursuing a Master of Management in Analytics.
+                        My background combines psychology, product work, research,
+                        and business analytics.
+                    </p>
+
+                    <p>
+                        I enjoy understanding complex problems, finding patterns in
+                        data, and translating analytical results into decisions that
+                        are understandable and useful.
+                    </p>
+
+                    <p>
+                        I'm especially interested in roles involving analytics,
+                        product analytics, business intelligence, and
+                        data-informed strategy.
+                    </p>
+                </div>
+
+
+                <div>
+
+                    <div class="skills-list">
+
+                        <div class="skill">
+                            <span>Programming</span>
+                            <span>Python · SQL</span>
+                        </div>
+
+                        <div class="skill">
+                            <span>Visualization</span>
+                            <span>Power BI · Tableau</span>
+                        </div>
+
+                        <div class="skill">
+                            <span>Product</span>
+                            <span>Figma · Jira · Notion</span>
+                        </div>
+
+                        <div class="skill">
+                            <span>Analytics</span>
+                            <span>Excel · Statistics</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+
+        <section id="contact">
+
+            <h2 class="section-title">Say Hello</h2>
+
+            <div class="contact-grid">
+
+                <div>
+                    <p class="contact-intro">
+                        Interested in analytics, product, or data-driven projects?
+                        Feel free to connect with me.
+                    </p>
+                </div>
+
+                <div class="contact-links">
+
+                    <a href="https://www.linkedin.com/" target="_blank">
+                        LinkedIn ↗
+                    </a>
+
+                    <a href="https://github.com/minizhang6017" target="_blank">
+                        GitHub ↗
+                    </a>
+
+                    <a href="mailto:your-email@example.com">
+                        Email ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+            <span>© 2026 Mini Zhang</span>
+            <span>Built with HTML & CSS · Hosted on GitHub Pages</span>
+        </footer>
+
     </div>
 
-    <!-- ============================================================
-       SIMPLE TAB SWITCHING SCRIPT
-       ============================================================ -->
-    <script>
-      function showTab(id) {
-        // hide all tab contents
-        document.querySelectorAll(".tab-content").forEach(function (el) {
-          el.classList.remove("active");
-        });
-        // remove active state from all buttons
-        document.querySelectorAll(".tab-button").forEach(function (btn) {
-          btn.classList.remove("active");
-        });
-        // show the selected tab + highlight the clicked button
-        document.getElementById(id).classList.add("active");
-        event.target.classList.add("active");
-      }
-    </script>
-  </body>
+</body>
+
 </html>
+
