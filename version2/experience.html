@@ -1,7 +1,36 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Experience | Mini Zhang</title><link rel="stylesheet" href="pages.css?v=editorial"></head>
-<body><div class="container"><nav><a class="logo" href="index.html">Mini Zhang</a><div class="nav-links"><a href="index.html">Home</a><a href="projects.html">Work</a><a href="experience.html" aria-current="page">Experience</a><a href="about.html">About</a><a href="contact.html">Contact</a></div></nav>
-<main><p class="eyebrow">Experience</p><h1>Product thinking,<br>powered by data.</h1><p class="intro">Experience across product, analytics, research, and data-driven decision making.</p><div class="list">
-<article class="row"><span class="number">01</span><h2>UniUni</h2><p>Product Assistant Intern. Supported product development, user research, dashboard creation, and feature planning.</p></article>
-<article class="row"><span class="number">02</span><h2>Enabled Talent</h2><p>Data &amp; Research Intern. Conducted labour-market research, analyzed data, and developed insights and recommendations.</p></article>
-<article class="row"><span class="number">03</span><h2>UBC SEEDS</h2><p>Undergraduate Researcher. Worked on a large-scale dining-hall feedback study using research design and quantitative analysis.</p></article>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Experience | Mini Zhang</title><link rel="stylesheet" href="pages.css?v=site-spacing-3"><style>
+.experience-timeline { margin: -10px 0 42px; }
+.experience-timeline ol { position: relative; display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin: 0; padding: 0; list-style: none; }
+.experience-timeline ol::before { content: ""; position: absolute; top: 16px; left: 6px; right: 6px; height: 1px; background: #d9d9d3; }
+.experience-timeline a { position: relative; display: block; min-height: 92px; padding: 0 18px 8px 0; }
+.timeline-dot { position: relative; z-index: 1; display: block; width: 12px; height: 12px; margin: 10px 0 16px; border: 2px solid #506e91; border-radius: 50%; background: #f7f7f4; transition: background 180ms ease, transform 180ms ease; }
+.timeline-date, .timeline-company, .timeline-role { display: block; }
+.timeline-date { color: #6d6d68; font-size: 12px; letter-spacing: .06em; }
+.timeline-company { margin-top: 4px; color: #171717; font-size: 15px; font-weight: 500; }
+.timeline-role { margin-top: 2px; color: #6d6d68; font-size: 13px; }
+.experience-timeline a:hover .timeline-dot, .experience-timeline a:focus-visible .timeline-dot { background: #506e91; transform: scale(1.12); }
+.experience-timeline a:hover .timeline-company, .experience-timeline a:focus-visible .timeline-company { color: #506e91; }
+.experience-timeline a:focus-visible { outline: 2px solid #506e91; outline-offset: 5px; }
+.experience-page .row[id] { scroll-margin-top: 24px; }
+@media (max-width: 760px) {
+  .experience-timeline { margin: 0 0 34px; }
+  .experience-timeline ol { grid-template-columns: 1fr; gap: 0; }
+  .experience-timeline ol::before { top: 6px; bottom: 6px; left: 5px; right: auto; width: 1px; height: auto; }
+  .experience-timeline a { min-height: 0; padding: 0 0 22px 28px; }
+  .timeline-dot { position: absolute; top: 0; left: 0; margin: 0; }
+}
+@media (prefers-reduced-motion: reduce) { .timeline-dot { transition: none; } }
+</style></head>
+<body class="experience-page"><div class="container"><nav><a class="logo" href="index.html">Mini Zhang</a><div class="nav-links"><a href="index.html">Home</a><a href="experience.html" aria-current="page">Experience</a><a href="projects.html">Projects</a><a href="about.html">About</a><a href="contact.html">Contact</a></div></nav>
+<main><p class="eyebrow">Experience</p><h1>Product thinking,<br>powered by data.</h1><p class="intro">Experience across product, analytics, research, and data-driven decision making.</p>
+<div class="experience-timeline" role="navigation" aria-label="Experience timeline"><ol>
+<li><a href="#ubc-seeds"><span class="timeline-dot" aria-hidden="true"></span><span class="timeline-date">Jan - May 2024</span><span class="timeline-company">UBC SEEDS</span><span class="timeline-role">Undergraduate Researcher</span></a></li>
+<li><a href="#enabled-talent"><span class="timeline-dot" aria-hidden="true"></span><span class="timeline-date">June - Sept 2025</span><span class="timeline-company">Enabled Talent</span><span class="timeline-role">Data &amp; Research</span></a></li>
+<li><a href="#nellies"><span class="timeline-dot" aria-hidden="true"></span><span class="timeline-date">June - Sept 2025</span><span class="timeline-company">Nellie&rsquo;s</span><span class="timeline-role">E-commerce Intern</span></a></li>
+<li><a href="#uniuni"><span class="timeline-dot" aria-hidden="true"></span><span class="timeline-date">Sept 2025 - Jan 2026</span><span class="timeline-company">UniUni</span><span class="timeline-role">Product Assistant</span></a></li>
+</ol></div><div class="list">
+<article class="row" id="uniuni"><div class="experience-meta"><p class="experience-date">Sept 2025 - Jan 2026</p><p class="experience-location">Richmond, Canada</p></div><div class="experience-content"><h3>Product Assistant Intern <span>&middot; UniUni</span></h3><p class="experience-summary">Contributed to the development of a B2B SaaS client portal supporting customer onboarding and logistics operations.</p><ul><li>Analyzed 100+ customer support inquiries to identify recurring pain points and product improvement opportunities.</li><li>Supported user research, dashboard design, feature planning, and product requirement development.</li><li>Collaborated with product, operations, design, and engineering teams to improve usability and operational workflows.</li></ul></div></article>
+<article class="row" id="nellies"><div class="experience-meta"><p class="experience-date">June 2025 - Sept 2025</p><p class="experience-location">North Vancouver, Canada</p></div><div class="experience-content"><h3>E-commerce Intern <span>&middot; Nellie&rsquo;s</span></h3><p class="experience-summary">Supported e-commerce operations through sales, inventory, and performance analysis across North American markets.</p><ul><li>Analyzed sales and inventory data to identify product trends and monitor stock performance.</li><li>Supported inventory forecasting and distribution planning across Canada and the U.S.</li><li>Collaborated with marketing and operations teams on campaign tracking and process improvement.</li></ul></div></article>
+<article class="row" id="enabled-talent"><div class="experience-meta"><p class="experience-date">June 2025 - Sept 2025</p><p class="experience-location">Toronto, Canada</p></div><div class="experience-content"><h3>Data &amp; Research Intern <span>&middot; Enabled Talent</span></h3><p class="experience-summary">Conducted quantitative research to uncover labour-market trends and support evidence-based strategy.</p><ul><li>Analyzed government and nonprofit datasets related to employment, education, and accessibility in Canada.</li><li>Applied descriptive statistical methods to identify trends, disparities, and systemic gaps.</li><li>Translated complex findings into reports and actionable recommendations for organizational decision-making.</li></ul></div></article>
+<article class="row" id="ubc-seeds"><div class="experience-meta"><p class="experience-date">Jan 2024 - May 2024</p><p class="experience-location">Vancouver, Canada</p></div><div class="experience-content"><h3>Undergraduate Researcher <span>&middot; UBC SEEDS</span></h3><p class="experience-summary">Conducted behavioural research examining how real-time feedback could influence food-waste reduction.</p><ul><li>Analyzed data from approximately 1,200 participants using Excel and SPSS.</li><li>Identified approximately 20&ndash;41% reductions in food waste across study conditions.</li><li>Invited to present findings at the UBC SEEDS Student-Led Research Showcase 2024.</li></ul></div></article>
 </div></main><footer><span>© 2026 Mini Zhang</span><span>Experience</span></footer></div></body></html>
