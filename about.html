@@ -1,0 +1,25 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>About | Mini Zhang</title><link rel="stylesheet" href="pages.css?v=site-spacing-3"><style>
+.about-page .about-copy p:last-child { margin-bottom: 0; }
+.about-page .skills-list .skill { align-items: flex-start; }
+.about-page .skills-list .skill span:first-child { flex: 0 0 34%; font-weight: 500; }
+.about-page .skills-list .skill span:last-child { color: #6d6d68; text-align: right; }
+.how-i-work { margin-top: 64px; padding-top: 36px; border-top: 1px solid #d9d9d3; opacity: 0; animation: rise-in 520ms ease-out 420ms forwards; }
+.how-i-work > h2 { margin: 0 0 30px; font-size: 20px; font-weight: 500; }
+.work-principles { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(32px, 5vw, 72px); }
+.work-principle { padding-top: 16px; border-top: 1px solid #d9d9d3; }
+.work-principle h3 { margin: 0 0 10px; color: #171717; font-size: 17px; font-weight: 500; }
+.work-principle p { max-width: 380px; margin: 0; color: #6d6d68; font-size: 15px; line-height: 1.6; }
+@media (max-width: 760px) {
+  .about-page .skills-list .skill { display: grid; gap: 5px; }
+  .about-page .skills-list .skill span:last-child { text-align: left; }
+  .how-i-work { margin-top: 48px; padding-top: 30px; }
+  .work-principles { grid-template-columns: 1fr; gap: 26px; }
+}
+@media (prefers-reduced-motion: reduce) { .how-i-work { animation: none; opacity: 1; } }
+</style></head>
+<body class="about-page"><div class="container"><nav><a class="logo" href="index.html">MZ</a><div class="nav-links"><a href="index.html">Home</a><a href="experience.html">Experience</a><a href="projects.html">Projects</a><a href="about.html" aria-current="page">About</a><a href="contact.html">Contact</a></div></nav>
+<main><p class="eyebrow">About Me</p><h1>Curious about people,<br>products &amp; patterns.</h1>
+<div class="two-column"><div class="about-copy"><p>I&rsquo;m currently pursuing a Master of Management in Analytics, with a background that brings together psychology, product work, research, and business analytics.</p><p>I&rsquo;m especially interested in understanding why people behave the way they do, identifying patterns in data, and turning those insights into products and decisions that are easier to use and act on.</p><p>My experience has shaped the way I approach problems: start with the user, understand the system, look for patterns, and translate complexity into something clear and actionable.</p><p>I&rsquo;m currently exploring opportunities in product analytics, business intelligence, product management, and data-informed strategy.</p></div>
+<div class="skills-list"><div class="skill"><span>Data &amp; Programming</span><span>Python &middot; SQL &middot; Excel</span></div><div class="skill"><span>Analytics</span><span>Statistics &middot; Data Analysis &middot; Experimentation</span></div><div class="skill"><span>Visualization &amp; BI</span><span>Power BI &middot; Tableau &middot; Looker Studio</span></div><div class="skill"><span>Product</span><span>Figma &middot; Jira &middot; Notion &middot; Requirements &middot; User Flows</span></div></div></div>
+<section class="how-i-work"><h2>How I work</h2><div class="work-principles"><article class="work-principle"><h3>Understand the user</h3><p>Start with the underlying problem and user context before jumping to a solution.</p></article><article class="work-principle"><h3>Find the pattern</h3><p>Use qualitative feedback and quantitative data to identify meaningful signals and recurring patterns.</p></article><article class="work-principle"><h3>Make it actionable</h3><p>Translate insights into clear product decisions, visualizations, or recommendations that teams can use.</p></article></div></section>
+</main><footer><span>&copy; 2026 Mini Zhang</span><span>About</span></footer></div></body></html>
