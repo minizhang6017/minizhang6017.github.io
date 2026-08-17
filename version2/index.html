@@ -79,12 +79,15 @@
             transition: right 220ms ease;
         }
 
-        .nav-links a:hover::after { right: 0; }
+        .nav-links a:hover::after,
+        .nav-links a[aria-current="page"]::after { right: 0; }
+
+        .nav-links:has(a:hover) a[aria-current="page"]:not(:hover)::after {
+            right: 100%;
+        }
 
         .nav-links a[aria-current="page"] {
             color: #506e91;
-            padding-bottom: 8px;
-            border-bottom: 1px solid #506e91;
         }
 
         /* HERO */
@@ -716,7 +719,7 @@
         <!-- NAVIGATION -->
 
         <nav>
-            <div class="logo">Mini Zhang</div>
+            <div class="logo">MZ</div>
 
             <div class="nav-links">
                 <a href="index.html" aria-current="page">Home</a>

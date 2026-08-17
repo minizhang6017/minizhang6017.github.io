@@ -1,9 +1,12 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Experience | Mini Zhang</title><link rel="stylesheet" href="pages.css?v=site-spacing-3"><style>
-.experience-timeline { margin: -10px 0 42px; }
-.experience-timeline ol { position: relative; display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin: 0; padding: 0; list-style: none; }
-.experience-timeline ol::before { content: ""; position: absolute; top: 16px; left: 6px; right: 6px; height: 1px; background: #d9d9d3; }
+.experience-timeline { margin: -10px 0 42px; overflow-x: auto; overflow-y: hidden; padding-bottom: 10px; scrollbar-width: thin; scrollbar-color: #afc8e8 transparent; }
+.experience-timeline ol { position: relative; display: grid; grid-template-columns: repeat(4, minmax(145px, 1fr)); gap: clamp(16px, 3vw, 32px); min-width: 640px; margin: 0; padding: 0; list-style: none; }
+.experience-timeline ol::before { content: ""; position: absolute; top: 17px; left: 12px; right: 12px; height: 1px; background: #d9d9d3; }
 .experience-timeline a { position: relative; display: block; min-height: 92px; padding: 0 18px 8px 0; }
-.timeline-dot { position: relative; z-index: 1; display: block; width: 12px; height: 12px; margin: 10px 0 16px; border: 2px solid #506e91; border-radius: 50%; background: #f7f7f4; transition: background 180ms ease, transform 180ms ease; }
+.timeline-dot { position: relative; z-index: 1; display: block; width: 26px; height: 9px; margin: 13px 0 18px; border-radius: 999px; background: #afc8e8; transition: background 180ms ease, transform 180ms ease; }
+.timeline-dot::before, .timeline-dot::after { content: ""; position: absolute; border-radius: 50%; background: inherit; }
+.timeline-dot::before { left: 4px; bottom: 3px; width: 12px; height: 12px; }
+.timeline-dot::after { right: 3px; bottom: 2px; width: 16px; height: 16px; }
 .timeline-date, .timeline-company, .timeline-role { display: block; }
 .timeline-date { color: #6d6d68; font-size: 12px; letter-spacing: .06em; }
 .timeline-company { margin-top: 4px; color: #171717; font-size: 15px; font-weight: 500; }
@@ -14,14 +17,15 @@
 .experience-page .row[id] { scroll-margin-top: 24px; }
 @media (max-width: 760px) {
   .experience-timeline { margin: 0 0 34px; }
-  .experience-timeline ol { grid-template-columns: 1fr; gap: 0; }
-  .experience-timeline ol::before { top: 6px; bottom: 6px; left: 5px; right: auto; width: 1px; height: auto; }
-  .experience-timeline a { min-height: 0; padding: 0 0 22px 28px; }
-  .timeline-dot { position: absolute; top: 0; left: 0; margin: 0; }
+  .experience-timeline ol { grid-template-columns: repeat(4, minmax(132px, 1fr)); gap: 18px; min-width: 600px; }
+  .experience-timeline a { min-height: 96px; padding-right: 12px; }
+  .timeline-date { font-size: 11px; }
+  .timeline-company { font-size: 14px; }
+  .timeline-role { font-size: 12px; }
 }
 @media (prefers-reduced-motion: reduce) { .timeline-dot { transition: none; } }
 </style></head>
-<body class="experience-page"><div class="container"><nav><a class="logo" href="index.html">Mini Zhang</a><div class="nav-links"><a href="index.html">Home</a><a href="experience.html" aria-current="page">Experience</a><a href="projects.html">Projects</a><a href="about.html">About</a><a href="contact.html">Contact</a></div></nav>
+<body class="experience-page"><div class="container"><nav><a class="logo" href="index.html">MZ</a><div class="nav-links"><a href="index.html">Home</a><a href="experience.html" aria-current="page">Experience</a><a href="projects.html">Projects</a><a href="about.html">About</a><a href="contact.html">Contact</a></div></nav>
 <main><p class="eyebrow">Experience</p><h1>Product thinking,<br>powered by data.</h1><p class="intro">Experience across product, analytics, research, and data-driven decision making.</p>
 <div class="experience-timeline" role="navigation" aria-label="Experience timeline"><ol>
 <li><a href="#ubc-seeds"><span class="timeline-dot" aria-hidden="true"></span><span class="timeline-date">Jan - May 2024</span><span class="timeline-company">UBC SEEDS</span><span class="timeline-role">Undergraduate Researcher</span></a></li>
